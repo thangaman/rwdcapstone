@@ -1,0 +1,27 @@
+<template name="header">
+<link rel="stylesheet" type="text/css" href="style.css">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand logo">Blog App</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <!-- <a href="{{blogPathFor "blogIndex"}}">Blog</a> -->
+			<a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="{{blogPathFor "blogAdmin"}}">Manage Blogs (After login)</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {{> loginButtons}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
